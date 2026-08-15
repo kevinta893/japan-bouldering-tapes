@@ -1,0 +1,68 @@
+export interface GymInfo {
+	name: string;
+	website: string;
+	tapeLevels: TapeLevel[];
+}
+
+export interface TapeLevel {
+	gymGrade: string;
+	vScale: string;
+	color: string;
+	textColor?: 'light' | 'dark';
+}
+
+export const gyms: GymInfo[] = [
+	{
+		name: 'Noborock',
+		website: 'https://noborock-climbing.com',
+		tapeLevels: [
+			{ gymGrade: '9級', vScale: 'VB', color: 'efcf1a', textColor: 'dark' },
+			{ gymGrade: '8級', vScale: 'VB', color: 'd63e7a', textColor: 'light' },
+			{ gymGrade: '7級', vScale: 'VB', color: '7cb23f', textColor: 'light' },
+			{ gymGrade: '6級', vScale: 'V0', color: '137ad4', textColor: 'light' },
+			{ gymGrade: '5級', vScale: 'V0+/V1', color: 'cd1114', textColor: 'light' },
+			{ gymGrade: '4級', vScale: 'V2/V3', color: '8f1d81', textColor: 'light' },
+			{ gymGrade: '3級', vScale: 'V3/V4', color: '105645', textColor: 'light' },
+			{ gymGrade: '2級', vScale: 'V4/V5', color: '724537', textColor: 'light' },
+			{ gymGrade: '1級', vScale: 'V5/V6', color: '292223', textColor: 'light' },
+			{ gymGrade: '初段', vScale: 'V7', color: '76716e', textColor: 'light' },
+			{ gymGrade: '2段', vScale: 'V8/V9', color: 'd6d5d1', textColor: 'dark' },
+			{ gymGrade: '3段', vScale: 'V10', color: '17115a', textColor: 'light' },
+		],
+	},
+	{
+		name: 'Rocky Shinjuku Akebonobashi',
+		website: 'https://www.rockyclimbing.com/shinjukuakebonobashi/',
+		tapeLevels: [
+			{ gymGrade: '9級', vScale: 'VB', color: 'f5e31f', textColor: 'dark' },
+			{ gymGrade: '8級', vScale: 'VB', color: 'f370a4', textColor: 'light' },
+			{ gymGrade: '7級', vScale: 'VB', color: '733814', textColor: 'light' },
+			{ gymGrade: '6級', vScale: 'V0', color: 'd4d6d5', textColor: 'dark' },
+			{ gymGrade: '5級', vScale: 'V1', color: 'a33132', textColor: 'light' },
+			{ gymGrade: '4級', vScale: 'V2', color: 'cc701c', textColor: 'light' },
+			{ gymGrade: '3級', vScale: 'V3', color: '74296d', textColor: 'light' },
+			{ gymGrade: '2級', vScale: 'V4', color: '0c523b', textColor: 'light' },
+			{ gymGrade: '1級', vScale: 'V5-6', color: '769016', textColor: 'light' },
+			{ gymGrade: '初段', vScale: 'V7-8', color: '181c3c', textColor: 'light' },
+			{ gymGrade: 'ニ段', vScale: 'V9-10', color: '0f76b2', textColor: 'light' },
+			{ gymGrade: '三段', vScale: 'V11-12', color: '171717', textColor: 'light' },
+			{ gymGrade: '四段', vScale: 'V13', color: '323d3b', textColor: 'light' },
+		],
+	},
+	{
+		name: 'B-Pump',
+		website: 'https://pump-climbing.com',
+		tapeLevels: [
+			{ gymGrade: '8', vScale: 'V0', color: 'b93459', textColor: 'light' },
+			{ gymGrade: '7', vScale: 'V0', color: '104847', textColor: 'light' },
+			{ gymGrade: '6', vScale: 'V0/V0+', color: 'beaa22', textColor: 'light' },
+			{ gymGrade: '5', vScale: 'V1/V2', color: '9e202a', textColor: 'light' },
+			{ gymGrade: '4', vScale: 'V2/V3', color: '182676', textColor: 'light' },
+			{ gymGrade: '3', vScale: 'V3/V4', color: 'b9b5b2', textColor: 'dark' },
+			{ gymGrade: '2', vScale: 'V5', color: '2072ae', textColor: 'light' },
+			{ gymGrade: '1', vScale: 'V6/V7', color: 'd65736', textColor: 'light' },
+			{ gymGrade: '初', vScale: 'V8', color: '513413', textColor: 'light' },
+			{ gymGrade: 'ニ', vScale: 'V9/V10', color: '2e743c', textColor: 'light' },
+		],
+	},
+];
