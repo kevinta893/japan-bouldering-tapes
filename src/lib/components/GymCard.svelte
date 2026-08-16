@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class="card-container w-full max-w-sm transform overflow-hidden rounded-xl border border-gray-700/50 bg-gray-800 shadow-2xl transition-transform"
+	class="card-container w-full transform overflow-hidden rounded-xl border border-gray-700/50 bg-gray-800 shadow-2xl transition-transform"
 >
 	<!-- Card Body -->
 	<div class="flex h-full flex-col gap-2 p-6">
@@ -18,8 +18,8 @@
 			href={gym.website}
 			target="_blank"
 			rel="noopener noreferrer"
-			class="mb-2 flex text-3xl font-bold text-indigo-400 hover:underline"
-			>{gym.name} <ArrowTopRightOnSquare /></a
+			class="mb-2 flex items-center text-3xl font-bold text-indigo-400 hover:underline"
+			>{gym.name}<ArrowTopRightOnSquare class="w-8" size="22" /></a
 		>
 
 		<div class="flex flex-col">

@@ -31,7 +31,7 @@ export const gyms: GymInfo[] = [
 		],
 	},
 	{
-		name: 'Rocky Shinjuku Akebonobashi',
+		name: 'Rocky Shinjuku',
 		website: 'https://www.rockyclimbing.com/shinjukuakebonobashi/',
 		tapeLevels: [
 			{ gymGrade: '9級', vScale: 'VB', color: 'f5e31f', textColor: 'dark' },
