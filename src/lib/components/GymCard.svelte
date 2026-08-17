@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { GymInfo } from '$lib/data/gyms';
 	import { ArrowTopRightOnSquare } from 'svelte-heros-v2';
+	import RouteTape from './RouteTape.svelte';
+	import type { GymInfo } from '$lib/types/gymInfo';
 
 	interface Props {
 		gym: GymInfo;
@@ -21,19 +22,7 @@
 
 		<div class="flex flex-col">
 			{#each gym.tapeLevels as tapeLevel, i}
-				<div
-					class={[
-						['text-md', 'rounded-xs', 'p-2', 'flex', 'justify-between'],
-						{
-							'text-white': (tapeLevel.textColor ?? 'light') === 'light',
-							'text-black': (tapeLevel.textColor ?? 'light') === 'dark',
-						},
-					]}
-					style={`background-color:#${tapeLevel.color}`}
-				>
-					<span>{tapeLevel.gymGrade}</span>
-					<span>{tapeLevel.vScale}</span>
-				</div>
+				<RouteTape {tapeLevel} />
 			{/each}
 		</div>
 		<div class="card-actions justify-end">
