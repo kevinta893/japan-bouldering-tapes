@@ -10,6 +10,8 @@
 	<title>Bouldering Tape Comparison</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
-{@render children()}
+<div class="container mx-auto lg:max-w-2xl">
+	{@render children()}
+</div>
 
 <DockNav />

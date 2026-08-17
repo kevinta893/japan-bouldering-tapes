@@ -15,13 +15,10 @@
 	};
 </script>
 
-<div
-	class="container mx-auto flex h-screen flex-col gap-4 bg-base-200 p-12 font-sans text-white lg:max-w-2xl"
->
-	<div class="flex items-center justify-between">
-		<GymSelect bind:value={leftGym} />
-		<button class="btn btn-ghost" onclick={swapComparison}><ArrowsRightLeft /></button>
-		<GymSelect bind:value={rightGym} />
-	</div>
-	<CompareGymsCard {leftGym} {rightGym} />
+<div class="mt-4 flex items-center justify-between md:mt-12">
+	<GymSelect bind:value={leftGym} />
+	<button class="btn btn-ghost" onclick={swapComparison}><ArrowsRightLeft /></button>
+	<GymSelect bind:value={rightGym} />
 </div>
+
+<CompareGymsCard {leftGym} {rightGym} />

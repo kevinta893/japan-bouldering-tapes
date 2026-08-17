@@ -16,7 +16,7 @@
 			href={gym.website}
 			target="_blank"
 			rel="noopener noreferrer"
-			class="mb-2 card-title flex items-center text-3xl font-bold text-primary hover:underline"
+			class="mb-2 card-title flex items-center text-3xl font-bold hover:underline"
 			>{gym.name}<ArrowTopRightOnSquare class="w-8" size="22" /></a
 		>
 
