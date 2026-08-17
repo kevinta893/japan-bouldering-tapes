@@ -9,16 +9,13 @@
 	let { gym }: Props = $props();
 </script>
 
-<div
-	class="card-container w-full transform overflow-hidden rounded-xl border border-gray-700/50 bg-gray-800 shadow-2xl transition-transform"
->
-	<!-- Card Body -->
-	<div class="flex h-full flex-col gap-2 p-6">
+<div class="card w-full bg-base-200 shadow-sm card-md">
+	<div class="card-body">
 		<a
 			href={gym.website}
 			target="_blank"
 			rel="noopener noreferrer"
-			class="mb-2 flex items-center text-3xl font-bold text-indigo-400 hover:underline"
+			class="mb-2 card-title flex items-center text-3xl font-bold text-primary hover:underline"
 			>{gym.name}<ArrowTopRightOnSquare class="w-8" size="22" /></a
 		>
 
@@ -38,6 +35,9 @@
 					<span>{tapeLevel.vScale}</span>
 				</div>
 			{/each}
+		</div>
+		<div class="card-actions justify-end">
+			<!-- <button class="btn btn-primary">Compare</button> -->
 		</div>
 	</div>
 </div>

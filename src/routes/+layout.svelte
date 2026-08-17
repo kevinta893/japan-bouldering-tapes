@@ -1,6 +1,7 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.png';
+	import DockNav from '$lib/components/DockNav.svelte';
 
 	let { children } = $props();
 </script>
@@ -10,3 +11,5 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 {@render children()}
+
+<DockNav />
