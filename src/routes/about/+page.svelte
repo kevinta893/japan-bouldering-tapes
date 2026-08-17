@@ -2,7 +2,9 @@
 	import { ArrowTopRightOnSquare } from 'svelte-heros-v2';
 </script>
 
-<div class="container mx-auto flex flex-col gap-4 font-sans text-white lg:max-w-xl">
+<div
+	class="container mx-auto flex h-screen flex-col gap-4 rounded bg-base-200 p-12 font-sans text-white lg:max-w-2xl"
+>
 	<h1 class="mt-8 text-3xl">About</h1>
 
 	<div class="flex items-center justify-between">
