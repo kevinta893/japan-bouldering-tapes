@@ -4,6 +4,7 @@ export const gyms: GymInfo[] = [
 	{
 		name: 'Noborock',
 		website: 'https://noborock-climbing.com',
+		keywords: ['のぼろく', 'ノボロク', 'ｎｏｂｏｒｏｃｋ', 'noborock'],
 		tapeLevels: [
 			{ gymGrade: '9級', vScale: ['VB'], color: 'efcf1a', textColor: 'dark' },
 			{ gymGrade: '8級', vScale: ['VB'], color: 'd63e7a', textColor: 'light' },
@@ -22,6 +23,7 @@ export const gyms: GymInfo[] = [
 	{
 		name: 'Rocky Shinjuku',
 		website: 'https://www.rockyclimbing.com/shinjukuakebonobashi/',
+		keywords: ['ロキ', 'ろき', 'ｒｏｃｋｙ', 'rocky'],
 		tapeLevels: [
 			{ gymGrade: '9級', vScale: ['VB'], color: 'f5e31f', textColor: 'dark' },
 			{ gymGrade: '8級', vScale: ['VB'], color: 'f370a4', textColor: 'light' },
@@ -41,6 +43,7 @@ export const gyms: GymInfo[] = [
 	{
 		name: 'B-Pump',
 		website: 'https://pump-climbing.com',
+		keywords: ['bpump', 'b pump', 'ｂｐｕｍｐ', 'ｂ　ｐｕｍｐ', 'ｂ ｐｕｍｐ', 'びぱ', 'ビパ'],
 		tapeLevels: [
 			{ gymGrade: '8', vScale: ['V0'], color: 'b93459', textColor: 'light' },
 			{ gymGrade: '7', vScale: ['V0'], color: '104847', textColor: 'light' },

@@ -28,6 +28,7 @@
 			.sort(sortVScale)
 			.reverse();
 
+		//TODO: Bug, if a vscale spans multiple levels it will not show up. Eg. A gym's K6 and K7 with rating V4 will only show one of the two.
 		return allVScales.map((vScale) => {
 			const leftGymTape = gymLeft.tapeLevels.find((tl) => tl.vScale.indexOf(vScale) >= 0) ?? null;
 			const rightGymTape = gymRight.tapeLevels.find((tl) => tl.vScale.indexOf(vScale) >= 0) ?? null;
