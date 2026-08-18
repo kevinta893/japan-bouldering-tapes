@@ -4,6 +4,7 @@
 	import { sortVScale, type VScaleLevel } from '$lib/types/vScale';
 	import { sortByArray } from '$lib/util/sort';
 	import RouteTape from './RouteTape.svelte';
+	import VScaleInfoModal from './VScaleInfoModal.svelte';
 
 	interface Props {
 		leftGym?: GymInfo | null;
@@ -17,6 +18,8 @@
 	}
 
 	let { leftGym: gymLeft, rightGym: gymRight }: Props = $props();
+
+	let vScaleInfoModal: VScaleInfoModal | null = $state(null);
 
 	const tapeComparisons = $derived.by(() => {
 		if (!gymLeft || !gymRight) {
@@ -69,6 +72,10 @@
 
 		return sortedComparisons;
 	});
+
+	const openVScaleInfo = () => {
+		vScaleInfoModal?.showModal();
+	};
 </script>
 
 <div class="w-full bg-base-300 p-6">
@@ -81,7 +88,12 @@
 					<div class="w-48">
 						<RouteTape tapeLevel={comparisonRow.leftGymTape} showVScale={false} />
 					</div>
-					<div class="divider w-full">{comparisonRow.vScale}</div>
+
+					<div class="divider w-full">
+						<button class="btn w-12 btn-neutral" onclick={openVScaleInfo}
+							>{comparisonRow.vScale}</button
+						>
+					</div>
 					<div class="w-48">
 						<RouteTape tapeLevel={comparisonRow.rightGymTape} showVScale={false} />
 					</div>
@@ -90,3 +102,5 @@
 		</div>
 	{/if}
 </div>
+
+<VScaleInfoModal bind:this={vScaleInfoModal} />
