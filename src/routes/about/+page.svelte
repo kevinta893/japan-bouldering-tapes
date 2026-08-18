@@ -2,7 +2,7 @@
 	import { ArrowTopRightOnSquare } from 'svelte-heros-v2';
 </script>
 
-<div class="flex h-screen flex-col gap-4 bg-base-200 p-4 md:p-12">
+<div class="flex h-[calc(100vh-4rem)] flex-col gap-4 bg-base-200 p-4 md:p-12">
 	<h1 class="text-3xl">About</h1>
 
 	<div class="flex items-center justify-between">
@@ -33,6 +33,6 @@
 		presented in this website. Please refer to the individual gyms for their specific difficulty levels
 		and conditions.
 	</p>
-	<p>Happy climbing and GAMBA!</p>
+	<p>Happy climbing and GANBA!</p>
 	<div class="flex w-full flex-col items-center gap-4"></div>
 </div>

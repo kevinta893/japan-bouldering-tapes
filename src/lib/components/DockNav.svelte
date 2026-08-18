@@ -6,7 +6,7 @@
 	const path = $derived(page.url.pathname);
 </script>
 
-<div class="dock dock-xl bg-base-300">
+<div class="dock bg-base-300">
 	<a href="/gyms" class={[{ 'dock-active': path.startsWith('/gyms') ? true : false }]}>
 		<img src={climbingIcon} class="size-[1.2em]" alt="Climbing Emoji" />
 		<span class="dock-label">Gyms</span>

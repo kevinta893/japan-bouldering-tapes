@@ -15,7 +15,7 @@
 	};
 </script>
 
-<div class="mt-4 flex items-center justify-between md:mt-12">
+<div class="mt-4 mb-2 flex items-center justify-between md:mt-12">
 	<GymSelect bind:value={leftGym} />
 	<button class="btn btn-ghost" onclick={swapComparison}><ArrowsRightLeft /></button>
 	<GymSelect bind:value={rightGym} />
