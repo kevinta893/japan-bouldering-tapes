@@ -24,5 +24,5 @@ const vScaleOrdering = [
 export type VScaleLevel = (typeof vScaleOrdering)[number];
 
 export const sortVScale = (vScaleA: VScaleLevel, vScaleB: VScaleLevel) => {
-	return vScaleOrdering.indexOf(vScaleB) - vScaleOrdering.indexOf(vScaleA);
+	return vScaleOrdering.indexOf(vScaleA) - vScaleOrdering.indexOf(vScaleB);
 };

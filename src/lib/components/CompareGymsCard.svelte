@@ -1,7 +1,8 @@
 <script lang="ts">
 	import type { GymInfo } from '$lib/types/gymInfo';
 	import type { TapeLevel } from '$lib/types/tapeLevel';
-	import { sortVScale } from '$lib/types/vScale';
+	import { sortVScale, type VScaleLevel } from '$lib/types/vScale';
+	import { sortByArray } from '$lib/util/sort';
 	import RouteTape from './RouteTape.svelte';
 
 	interface Props {
@@ -11,43 +12,71 @@
 
 	interface ComparisonRow {
 		leftGymTape: TapeLevel | null;
-		vScale: string;
+		vScale: VScaleLevel;
 		rightGymTape: TapeLevel | null;
 	}
 
 	let { leftGym: gymLeft, rightGym: gymRight }: Props = $props();
 
-	const gymCompares = $derived.by(() => {
+	const tapeComparisons = $derived.by(() => {
 		if (!gymLeft || !gymRight) {
 			return [];
 		}
 
-		const leftGymVScales = gymLeft.tapeLevels.flatMap((tl) => tl.vScale);
-		const rightGymVScales = gymRight.tapeLevels.flatMap((tl) => tl.vScale);
-		const allVScales = Array.from(new Set(leftGymVScales.concat(rightGymVScales)))
-			.sort(sortVScale)
-			.reverse();
+		// Flatten all v Scales
+		const leftGymVScales = gymLeft.tapeLevels.flatMap((tl) =>
+			tl.vScale.map((v) => ({ gymTape: tl, vScale: v }))
+		);
+		const rightGymVScales = gymRight.tapeLevels.flatMap((tl) =>
+			tl.vScale.map((v) => ({ gymTape: tl, vScale: v }))
+		);
 
-		//TODO: Bug, if a vscale spans multiple levels it will not show up. Eg. A gym's K6 and K7 with rating V4 will only show one of the two.
-		return allVScales.map((vScale) => {
-			const leftGymTape = gymLeft.tapeLevels.find((tl) => tl.vScale.indexOf(vScale) >= 0) ?? null;
-			const rightGymTape = gymRight.tapeLevels.find((tl) => tl.vScale.indexOf(vScale) >= 0) ?? null;
+		// With the left, pair up with everything on the right based on VScale.
+		// Then remaining right is added and sorted in vScale order
+		const vScaleList: ComparisonRow[] = leftGymVScales.map((vScale) => {
+			// Find matching VScale on the right side and pair up. Remove from right side
+			const matchingRightVScaleIndex = rightGymVScales.findIndex(
+				(rVScale) => vScale.vScale == rVScale.vScale
+			);
 
-			return {
-				leftGymTape,
-				vScale,
-				rightGymTape,
-			} satisfies ComparisonRow;
+			if (matchingRightVScaleIndex >= 0) {
+				const rightTapeLevel = rightGymVScales.splice(matchingRightVScaleIndex, 1)[0];
+				return {
+					leftGymTape: vScale.gymTape,
+					vScale: vScale.vScale,
+					rightGymTape: rightTapeLevel.gymTape,
+				};
+			} else {
+				return {
+					leftGymTape: vScale.gymTape,
+					vScale: vScale.vScale,
+					rightGymTape: null,
+				};
+			}
 		});
+
+		const remainingRightTapeLevels: ComparisonRow[] = rightGymVScales.map((rightTapeLevel) => ({
+			leftGymTape: null,
+			vScale: rightTapeLevel.vScale,
+			rightGymTape: rightTapeLevel.gymTape,
+		}));
+
+		const sortedComparisons = sortByArray(
+			vScaleList.concat(remainingRightTapeLevels),
+			(row) => row.vScale,
+			sortVScale
+		);
+
+		return sortedComparisons;
 	});
 </script>
 
 <div class="w-full bg-base-300 p-6">
-	{#if !gymLeft || !gymRight}
+	{#if tapeComparisons.length <= 0}
 		<p>Please select two gyms to compare their tape levels.</p>
 	{:else}
 		<div class="grid grid-cols-1">
-			{#each gymCompares as comparisonRow, index}
+			{#each tapeComparisons as comparisonRow, index}
 				<div class="flex w-full items-center justify-between gap-4">
 					<div class="w-48">
 						<RouteTape tapeLevel={comparisonRow.leftGymTape} showVScale={false} />
