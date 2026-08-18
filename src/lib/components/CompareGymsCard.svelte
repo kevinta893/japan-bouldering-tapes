@@ -4,6 +4,7 @@
 	import { sortVScale, type VScaleLevel } from '$lib/types/vScale';
 	import { sortByArray } from '$lib/util/sort';
 	import RouteTape from './RouteTape.svelte';
+	import VScaleButton from './VScaleButton.svelte';
 	import VScaleInfoModal from './VScaleInfoModal.svelte';
 
 	interface Props {
@@ -88,11 +89,8 @@
 					<div class="w-48">
 						<RouteTape tapeLevel={comparisonRow.leftGymTape} showVScale={false} />
 					</div>
-
 					<div class="divider w-full">
-						<button class="btn w-12 btn-neutral" onclick={openVScaleInfo}
-							>{comparisonRow.vScale}</button
-						>
+						<VScaleButton vScale={comparisonRow.vScale} onclick={openVScaleInfo} />
 					</div>
 					<div class="w-48">
 						<RouteTape tapeLevel={comparisonRow.rightGymTape} showVScale={false} />
