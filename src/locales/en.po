@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"Source-Language: en\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/routes/+layout.svelte
+msgid "Bouldering Tape Comparison"
+msgstr "Bouldering Tape Comparison"
+
+#: src/lib/components/CompareGymsCard.svelte
+msgid "Please select two gyms to compare their tape levels."
+msgstr "Please select two gyms to compare their tape levels."
+
+#: src/lib/components/GymSelect.svelte
+msgid "Select a gym"
+msgstr "Select a gym"
+
+#: src/lib/components/DockNav.svelte
+msgid "Climbing Emoji"
+msgstr "Climbing Emoji"
+
+#: src/lib/components/DockNav.svelte
+msgid "Gyms"
+msgstr "Gyms"
+
+#: src/lib/components/DockNav.svelte
+msgid "Compare"
+msgstr "Compare"
+
+#: src/lib/components/DockNav.svelte
+#: src/routes/about/+page.svelte
+msgid "About"
+msgstr "About"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Beginner (VB-V2) - Large holds and straight-forward moves"
+msgstr "Beginner (VB-V2) - Large holds and straight-forward moves"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Intermediate (V3-V5) - More advanced movements/balance"
+msgstr "Intermediate (V3-V5) - More advanced movements/balance"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Advanced (V6-V8) - Smaller holds, more complex moves/balance"
+msgstr "Advanced (V6-V8) - Smaller holds, more complex moves/balance"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Expert (V9-V11) - Very demanding in skill and technique"
+msgstr "Expert (V9-V11) - Very demanding in skill and technique"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Pro (V12+) - Extreme skill required"
+msgstr "Pro (V12+) - Extreme skill required"
+
+#: src/lib/components/VScaleInfoModal.svelte
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Close"
+msgstr "Close"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "V-Scale Info"
+msgstr "V-Scale Info"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "The V-Scale is a common system used in America to grade bouldering routes. It starts from the easiest to hardest: VB, V0, V1, V2, etc."
+msgstr "The V-Scale is a common system used in America to grade bouldering routes. It starts from the easiest to hardest: VB, V0, V1, V2, etc."
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Each gym's setter may vary on what they consider their route's grade is. Although generally as grades increase more climbing techniques are necessary."
+msgstr "Each gym's setter may vary on what they consider their route's grade is. Although generally as grades increase more climbing techniques are necessary."
+
+#: src/lib/components/LanguageSelector.svelte
+msgid "English"
+msgstr "English"
+
+#: src/routes/about/+page.svelte
+msgid "<0>Disclaimer:</0> This website is not responsible for any inaccuracies or errors in the information provided. I do not represent nor sponsored by the individual bouldering gyms that are presented in this website. Please refer to the individual gyms for their specific difficulty levels and conditions."
+msgstr "<0>Disclaimer:</0> This website is not responsible for any inaccuracies or errors in the information provided. I do not represent nor sponsored by the individual bouldering gyms that are presented in this website. Please refer to the individual gyms for their specific difficulty levels and conditions."
+
+#: src/routes/about/+page.svelte
+msgid "Happy climbing and GANBA!"
+msgstr "Happy climbing and GANBA!"
+
+#: src/routes/gyms/+page.svelte
+msgid "Search for a gym"
+msgstr "Search for a gym"
+
+#: src/routes/gyms/+page.svelte
+msgid "No gyms matched the search terms."
+msgstr "No gyms matched the search terms."
+
+#: src/lib/components/LanguageSelector.svelte
+msgid "日本語"
+msgstr "日本語"
+
+#: src/routes/about/+page.svelte
+msgid "GitHub <0/>"
+msgstr "GitHub <0/>"
+
+#: src/routes/about/+page.svelte
+msgid "This is a simple bouldering route comparison website for some gyms in Japan. Compares different colored tape systems and grounds them to the V-Scale system. While the actual difficulty may vary in the actual gym and between gyms, this website is only intended to provide a reference."
+msgstr "This is a simple bouldering route comparison website for some gyms in Japan. Compares different colored tape systems and grounds them to the V-Scale system. While the actual difficulty may vary in the actual gym and between gyms, this website is only intended to provide a reference."

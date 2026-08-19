@@ -2,7 +2,7 @@
 	import GymCard from '$lib/components/GymCard.svelte';
 	import SearchInput from '$lib/components/SearchInput.svelte';
 	import { gyms } from '$lib/data/gyms';
-	import { onMount, type SvelteComponent } from 'svelte';
+	import { onMount } from 'svelte';
 
 	let searchTerms = $state('');
 

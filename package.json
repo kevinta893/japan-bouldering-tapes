@@ -15,7 +15,9 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
-		"gen": "wrangler types"
+		"gen": "wrangler types",
+		"extract-translations": "wuchale",
+		"clean-translations": "wuchale --clean"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^7.2.8",
@@ -23,6 +25,7 @@
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"@tailwindcss/vite": "^4.3.0",
 		"@types/node": "^26.2.0",
+		"@wuchale/svelte": "^0.20.6",
 		"daisyui": "^5.7.17",
 		"prettier": "^3.8.3",
 		"prettier-plugin-svelte": "^4.1.0",
@@ -33,6 +36,7 @@
 		"tailwindcss": "^4.3.0",
 		"typescript": "^6.0.3",
 		"vite": "^8.0.16",
-		"wrangler": "^4.97.0"
+		"wrangler": "^4.97.0",
+		"wuchale": "^0.25.7"
 	}
 }

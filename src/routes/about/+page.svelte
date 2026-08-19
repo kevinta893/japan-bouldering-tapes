@@ -1,4 +1,5 @@
 <script lang="ts">
+	import LanguageSelector from '$lib/components/LanguageSelector.svelte';
 	import { ArrowTopRightOnSquare } from 'svelte-heros-v2';
 </script>
 
@@ -12,20 +13,16 @@
 			rel="noopener noreferrer"
 			class="flex link items-center"
 		>
-			Github
-			<ArrowTopRightOnSquare class="w-8" size="22" /></a
+			GitHub
+			<ArrowTopRightOnSquare class="w-8" size="18" /></a
 		>
-
-		<select class="select w-48">
-			<option disabled>Language Coming Soon</option>
-			<option selected>English</option>
-		</select>
+		<LanguageSelector />
 	</div>
 
 	<p>
 		This is a simple bouldering route comparison website for some gyms in Japan. Compares different
-		colored tapes and grounds them to the V-Scale system. While the actual difficulty may vary in
-		the actual gym and between gyms, this website is only intended to provide a reference.
+		colored tape systems and grounds them to the V-Scale system. While the actual difficulty may
+		vary in the actual gym and between gyms, this website is only intended to provide a reference.
 	</p>
 	<p>
 		<strong>Disclaimer:</strong> This website is not responsible for any inaccuracies or errors in the

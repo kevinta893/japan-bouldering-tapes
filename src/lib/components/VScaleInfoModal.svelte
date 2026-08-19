@@ -40,6 +40,6 @@
 		</div>
 	</div>
 	<form method="dialog" class="modal-backdrop">
-		<button>close</button>
+		<button>Close</button>
 	</form>
 </dialog>

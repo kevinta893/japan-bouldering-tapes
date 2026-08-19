@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"Source-Language: en\n"
+"Language: jp\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/routes/+layout.svelte
+msgid "Bouldering Tape Comparison"
+msgstr "ボルダリングテープ比較"
+
+#: src/lib/components/CompareGymsCard.svelte
+msgid "Please select two gyms to compare their tape levels."
+msgstr "二つのジム選択してください。"
+
+#: src/lib/components/GymSelect.svelte
+msgid "Select a gym"
+msgstr "ジムを選択"
+
+#: src/lib/components/DockNav.svelte
+msgid "Climbing Emoji"
+msgstr "クライミング絵文字"
+
+#: src/lib/components/DockNav.svelte
+msgid "Gyms"
+msgstr "ジム"
+
+#: src/lib/components/DockNav.svelte
+msgid "Compare"
+msgstr "比較"
+
+#: src/lib/components/DockNav.svelte
+#: src/routes/about/+page.svelte
+msgid "About"
+msgstr "情報"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Beginner (VB-V2) - Large holds and straight-forward moves"
+msgstr "初心者（VB-V2）- 大きなホールと直線的な移動"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Intermediate (V3-V5) - More advanced movements/balance"
+msgstr "中級（V3-V5）- 高度な移動とバランス"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Advanced (V6-V8) - Smaller holds, more complex moves/balance"
+msgstr "上級（V6-V8）- 小さいホールと複雑な移動/バランス"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Expert (V9-V11) - Very demanding in skill and technique"
+msgstr "エキスパート（V9-V11）- 技能と技術の高度な要求"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Pro (V12+) - Extreme skill required"
+msgstr "プロ（V12+）- 高度なスキルが必要"
+
+#: src/lib/components/VScaleInfoModal.svelte
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Close"
+msgstr "閉じる"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "V-Scale Info"
+msgstr "V-Scale 情報"
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "The V-Scale is a common system used in America to grade bouldering routes. It starts from the easiest to hardest: VB, V0, V1, V2, etc."
+msgstr "V-Scaleはアメリカで使用される一般的なシステムです。最初から最後まで: VB, V0, V1, V2, etc."
+
+#: src/lib/components/VScaleInfoModal.svelte
+msgid "Each gym's setter may vary on what they consider their route's grade is. Although generally as grades increase more climbing techniques are necessary."
+msgstr "各ジムのセッターによって、そのルートのグレードとして何を基準にするかは異なる場合があります。一般的には、グレードが上がるほど、より多くの登攀テクニックが必要になります。"
+
+#: src/lib/components/LanguageSelector.svelte
+msgid "English"
+msgstr "English"
+
+#: src/routes/about/+page.svelte
+msgid "<0>Disclaimer:</0> This website is not responsible for any inaccuracies or errors in the information provided. I do not represent nor sponsored by the individual bouldering gyms that are presented in this website. Please refer to the individual gyms for their specific difficulty levels and conditions."
+msgstr "免責事項：本ウェブサイトは、提供されている情報の不正確さや誤りについて一切の責任を負いません。また、このウェブサイトに掲載されている個々のボルダリングジムを代表するものではなく、スポンサーでもありません。各ジムの具体的な難易度や条件については、個々のジムにお問い合わせください。"
+
+#: src/routes/about/+page.svelte
+msgid "Happy climbing and GANBA!"
+msgstr "楽しく登って、ガンバ！"
+
+#: src/routes/gyms/+page.svelte
+msgid "Search for a gym"
+msgstr "ジム検索"
+
+#: src/routes/gyms/+page.svelte
+msgid "No gyms matched the search terms."
+msgstr "検索条件に一致するジムはありませんでした。"
+
+#: src/lib/components/LanguageSelector.svelte
+msgid "日本語"
+msgstr "日本語"
+
+#: src/routes/about/+page.svelte
+msgid "GitHub <0/>"
+msgstr "GitHub <0/>"
+
+#: src/routes/about/+page.svelte
+msgid "This is a simple bouldering route comparison website for some gyms in Japan. Compares different colored tape systems and grounds them to the V-Scale system. While the actual difficulty may vary in the actual gym and between gyms, this website is only intended to provide a reference."
+msgstr "日本にボルダリングジム比較サイトです。V-Scale使用にテープグレーディング比較できます。実際のジムでの難しさや、ジム同士の違いによって難易度が変わることはありますが、このサイトは参考としてのみ作成されています。"

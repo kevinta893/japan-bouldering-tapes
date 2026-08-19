@@ -15,7 +15,7 @@
 
 <select class="select" bind:value>
 	{#if !!prompt}
-		<option disabled selected>Pick a color</option>
+		<option disabled selected>{prompt}</option>
 	{/if}
 	{#each options as option}
 		<option value={option.value}>{option.label}</option>
