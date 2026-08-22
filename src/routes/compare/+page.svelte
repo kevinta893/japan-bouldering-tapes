@@ -15,6 +15,10 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Japan Bouldering Tape Comparison - Compare</title>
+</svelte:head>
+
 <div class="mt-4 mb-2 flex items-center justify-between md:mt-12">
 	<GymSelect bind:value={leftGym} />
 	<button class="btn btn-ghost" onclick={swapComparison}><ArrowsRightLeft /></button>

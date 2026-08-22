@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>Bouldering Tape Comparison</title>
+	<title>Japan Bouldering Tape Comparison</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 

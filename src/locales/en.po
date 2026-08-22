@@ -7,10 +7,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/routes/+layout.svelte
-msgid "Bouldering Tape Comparison"
-msgstr "Bouldering Tape Comparison"
-
 #: src/lib/components/CompareGymsCard.svelte
 msgid "Please select two gyms to compare their tape levels."
 msgstr "Please select two gyms to compare their tape levels."
@@ -104,3 +100,19 @@ msgstr "GitHub <0/>"
 #: src/routes/about/+page.svelte
 msgid "This is a simple bouldering route comparison website for some gyms in Japan. Compares different colored tape systems and grounds them to the V-Scale system. While the actual difficulty may vary in the actual gym and between gyms, this website is only intended to provide a reference."
 msgstr "This is a simple bouldering route comparison website for some gyms in Japan. Compares different colored tape systems and grounds them to the V-Scale system. While the actual difficulty may vary in the actual gym and between gyms, this website is only intended to provide a reference."
+
+#: src/routes/+layout.svelte
+msgid "Japan Bouldering Tape Comparison"
+msgstr "Japan Bouldering Tape Comparison"
+
+#: src/routes/gyms/+page.svelte
+msgid "Japan Bouldering Tape Comparison - Gyms"
+msgstr "Japan Bouldering Tape Comparison - Gyms"
+
+#: src/routes/compare/+page.svelte
+msgid "Japan Bouldering Tape Comparison - Compare"
+msgstr "Japan Bouldering Tape Comparison - Compare"
+
+#: src/routes/about/+page.svelte
+msgid "Japan Bouldering Tape Comparison - About"
+msgstr "Japan Bouldering Tape Comparison - About"

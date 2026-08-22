@@ -3,6 +3,10 @@
 	import { ArrowTopRightOnSquare } from 'svelte-heros-v2';
 </script>
 
+<svelte:head>
+	<title>Japan Bouldering Tape Comparison - About</title>
+</svelte:head>
+
 <div class="flex h-[calc(100vh-4rem)] flex-col gap-4 bg-base-200 p-4 md:p-12">
 	<h1 class="text-3xl">About</h1>
 

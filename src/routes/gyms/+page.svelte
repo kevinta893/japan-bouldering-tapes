@@ -21,6 +21,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Japan Bouldering Tape Comparison - Gyms</title>
+</svelte:head>
+
 <div class="p-4">
 	<SearchInput bind:this={searchInput} placeholder="Search for a gym" bind:value={searchTerms} />
 </div>
